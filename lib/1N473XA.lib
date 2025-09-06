@@ -10,6 +10,17 @@ VZ 2 3 6.05
 .MODEL DR D ( IS=12.1f RS=0.209 N=1.00 )
 .ENDS
 
+*SRC=1N4734A;DI_1N4734A Diodes;Zener <=10V; 5.60V  1.00W   Diodes Inc.
+*SYM=HZEN
+.SUBCKT DI_1N4734A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 4.48
+.MODEL DF D ( IS=73.6p RS=0.620 N=1.10
++ CJO=165p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=14.7f RS=0.256 N=1.49 )
+.ENDS
 
 *SRC=1N4735A;DI_1N4735A;Diodes;Zener <=10V; 6.20V  1.00W   Diodes Inc. Zener
 *SYM=HZEN
@@ -22,3 +33,4 @@ VZ 2 3 5.33
 + CJO=141p VJ=0.750 M=0.330 TT=50.1n )
 .MODEL DR D ( IS=13.3f RS=0.218 N=1.16 )
 .ENDS
+

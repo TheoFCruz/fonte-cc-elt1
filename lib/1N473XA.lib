@@ -34,3 +34,7 @@ VZ 2 3 5.33
 .MODEL DR D ( IS=13.3f RS=0.218 N=1.16 )
 .ENDS
 
+* 1N4731    4.3 Volt �5% 1W zener diode
+.model DI_1N4731A  D(Is=837.3E-18 Rs=.1211 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.389
++                  Vj=.75 Fc=.5 Isr=2.56n Nr=2 Bv=4.3 Ibv=60.167m Nbv=1.8815
++                  Ibvl=6.0358m Nbvl=12.57 Tbv1=-232.558u)
